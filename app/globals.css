@@ -55,12 +55,13 @@
     --chart-5: 340 75% 55%;
   }
 
-@theme inline {
-  
+@theme {
+  /* Fonts */
   --font-sans: var(--font-poppins);
   --font-mono: var(--font-poppins);
   --font-poppins: var(--font-poppins);
 
+  /* Colors */
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
@@ -72,7 +73,6 @@
   --color-blue: #56B8FF;
   --color-pink: #EEA8FD;
   --color-orange: #F9AB72;
-  
   
   --color-light-100: #333F4E;
   --color-light-200: #A3B2C7;
@@ -112,6 +112,9 @@
   --color-chart-3: hsl(var(--chart-3));
   --color-chart-4: hsl(var(--chart-4));
   --color-chart-5: hsl(var(--chart-5));
+
+  /* Border radius */
+  --radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -146,5 +149,7 @@ body {
   .flex-center {
     @apply flex items-center justify-center;
   }
-}
-
+  .body-1 {
+    @apply text-[16px] leading-[24px] font-normal;
+  }
+} 
